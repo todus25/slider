@@ -1,0 +1,69 @@
+{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	
+}
+
+ @keyframes slidy {
+0% { transform: translate(0px); }
+20% { transform: translate(0px);}
+40% { transform: translate(-33.33%); }
+60% { transform: translate(-33.33%); }
+80% { transform: translate(-66.66%); }
+100% { transform: translate(-66.66%); }
+
+}/*simple math*/
+#slider{height:13cm;
+         width:300%;/*it doesnt matter because we hide overflow written on body tag*/
+		 position:relative;
+		 margin-left:0px;
+		 position:absolute;
+		 left:0px;} 
+		 
+		 
+ #sl{position:absolute;
+			 height:13cm;
+			 float:left;
+         width:100%;
+		 animation: 18s slidy infinite;/*three image so i assumed 4500px ,more than thier summing pxs*/
+  animation-timing-function:ease-out;
+	animation-fill-mode:forwards;
+	}
+
+ #sl img { width: 33.33%;/*screen resulution..u can change it with ur preference*/
+        height:13cm;
+		margin-left:0px;
+		padding:0px;
+		display:block;
+		float:left;}
+					  
+					  
+.x{position:absolute;
+
+top:0px;
+left:-500px;
+color:red;
+ animation: 18s trans infinite;/*three image so i assumed 4500px ,more than thier summing pxs*/
+ font-style:italic;
+ font-weight:bold;
+ font-size:1.5cm;
+  animation-timing-function:ease-in-out;
+	animation-fill-mode:backwards;
+	
+}	
+
+.y{	animation-delay:0s;	}
+.z{	animation-delay:13.5s;}  
+.w{	animation-delay:7s;}  
+@keyframes trans {
+0% { transform: translate(-400px); }
+5% { transform: translate(1100px); }
+20% { transform: translate(1100px); }
+25% { transform: translate(-400px); }
+
+100% { transform: translate(-400px); }
+
+
+}.
+	
